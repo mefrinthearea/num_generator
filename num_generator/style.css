@@ -1,0 +1,151 @@
+/* =====================================================
+   Global Page Styling
+===================================================== */
+body {
+    /* Background Gradient */
+    background: linear-gradient(
+        120deg,
+        #09092a,
+        #11114b,
+        #1d1d7b,
+        #2929ad,
+        #3737dc,
+        #089cf9,
+        #21a4f5,
+        #87CEFA,
+        #de5612,
+        #6f8245
+    );
+    background-size: 300% 200%;
+    animation: skyFlow 15s cubic-bezier(0.9, 0.5, 0.2, 0.5) infinite;
+
+    /* Layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+    /* Typography */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* =====================================================
+   Main Container
+===================================================== */
+.container {
+    background: #9bdada;
+    padding: 40px;
+    border-radius: 12px;
+    width: 300px;
+
+    text-align: center;
+    box-shadow: 0 8px 20px black;
+}
+
+
+/* =====================================================
+   Heading
+===================================================== */
+h1 {
+    margin-bottom: 20px;
+    font-style: oblique;
+}
+
+
+/* =====================================================
+   Number Display
+===================================================== */
+#number-display {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #999B9B;
+}
+
+
+/* =====================================================
+   Input Fields
+===================================================== */
+#min,
+#max {
+    width: 50%;
+    margin: 5px;
+    padding: 12px;
+    font-size: 16px;
+
+    border: 2px solid #2929ad;
+    border-radius: 8px;
+
+    background: white;
+    color: #11114b;
+
+    outline: none;
+}
+
+
+/* =====================================================
+   Generate Button
+===================================================== */
+#generate-btn {
+    background: #999B9B;
+    color: black;
+    font-weight: bold;
+
+    border: none;
+    padding: 12px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+/* Button Hover Effect */
+#generate-btn:hover {
+    background: linear-gradient(
+        45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+    );
+
+    background-size: 400%;
+    animation: rainbow 3s linear infinite;
+    transform: scale(1.1);
+}
+
+
+/* =====================================================
+   Animations
+===================================================== */
+
+/* Rainbow Button Animation */
+@keyframes rainbow {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+/* Sky Flow Background Animation */
+@keyframes skyFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
